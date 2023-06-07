@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-aspr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-bunq-tenant/test-app-luqr/test-component-aspr@sha256:aab71052c8d1db4b2b529d3f6834dd81988cda7df3b76be8816ae177160965dd
+        name: my-python
+        resources: {}
+status: {}
